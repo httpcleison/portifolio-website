@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --bg-url: url(./Assets/bg-mobile.jpg);
+    --color-text: white;
+    --card-color: rgba(255, 255, 255, 0.05);
+    --card-color-hover: rgba(255, 255, 255, 0.1);
+}
+
+.light{
+    --bg-url: url(./Assets/bg-mobile-light.jpg);
+    --color-text: rgb(0, 0, 0);
+    --card-color: rgba(255, 255, 255, 0.5);
+    --card-color-hover: rgba(255, 255, 255, 0.2);
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text);
+}
+
+body{
+    background: var(--bg-url) no-repeat top center/cover;
+}
+
+#container{
+    width: 100%;
+    margin: 56px auto 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#container .projeto{
+    width: 250px;
+    height: 390px;
+    background-color: var(--card-color);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 25px;
+    border: 1px solid rgb(210, 126, 187);
+    margin: 25px;
+    word-break: break-all;
+}
+
+#container .projeto:hover{
+    background-color: var(--card-color-hover);
+}
+
+#container .projeto p{
+    margin-top: 25px;
+}
+
+#container .projeto img{
+    margin-top: 15px;
+    max-width: 265px;
+}
+
+#container .projeto button{
+    margin: auto 25px 0 25px;
+    background-color: var(--card-color);
+    border: 1px solid var(--color-text);
+    padding: 10px;
+    border-radius: 12px;
+    color: var(--color-text);
+}
+
+#visitar{
+    width: 100%;
+    padding: 25px;
+}
+
+#container #visitar button{
+    margin: auto 25px 0 25px;
+    background-color: var(--card-color);
+    border: 1px solid var(--color-text);
+    padding: 10px;
+    border-radius: 12px;
+    color: var(--color-text);
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+}

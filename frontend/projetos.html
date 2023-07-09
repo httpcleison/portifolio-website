@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/avatar-light.png">
+    <link rel="stylesheet" href="style1.css">
+    <title>Cleison Dev - portifolio</title>
+</head>
+<body>
+    <div id="container">
+        <div class="projeto">
+            <h2>PLATAFORMA DE VIDEOS</h2>
+            <p>Oniflix-projeto fronendt desenvolvildo aproximadamente 2 meses;foi bastante desafiador pois foi bem no ínicio dos meus estudos afundo do fullstack.</p>
+            <img src="./Assets/img_project.png" alt="oniflix-frontend">
+            <button>VER NO GITHUB</button>
+        </div>
+
+        <div class="projeto">
+            <h2>PORTIFOLIO</h2>
+            <p>Portifolio-projeto frontend, originalmente a ideia foi baseada no portifolio da <a href="https://app.rocketseat.com.br/discover" target="_blank">Rocketseat</a>, mudei um pouco a ideia e criei um site fullstack.</p>
+            <img src="./Assets/img_project2.png" alt="portifolio-frontend">
+            <button onclick="page_project('https://github.com/httpcleison/portifolio-website')">VER NO GITHUB</button>
+        </div>
+
+        <div class="projeto">
+            <h2>TEMPLATE-VENDA DE DOCES</h2>
+            <p>VENDA DE DOCES-projeto frontend, com duraçâo de 1 mês para ser produzido, o foco foi montar um servidor com NodeJS, onde meu primeiro <a href="">esquema de servidor</a> foi criado.</p>
+            <img src="./Assets/img_project3.png" alt="doces-frontend">
+            <button onclick="page_project('https://github.com/httpcleison/site-venda-de-doces')">VER NO GITHUB</button>
+        </div>
+
+        <div id="visitar">
+            <button onclick="page_project('https://github.com/httpcleison')">VER TODOS OS PROJETOS</button>
+        </div>
+
+        <footer>
+            @CLEISONDEV
+        </footer>
+    </div>
+
+    <script>
+        function toogleActive(){
+            const html = document.documentElement;
+            if(localStorage.getItem("switch") == "light"){
+                html.classList.add('light');
+            } else {
+                html.classList.remove('light');
+            }
+        }
+
+        toogleActive();
+
+        function page_project(url){
+            window.location.assign(url);
+        }
+    </script>
+</body>
+</html>

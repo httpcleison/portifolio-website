@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/avatar-light.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Cleison Dev - portifolio</title>
+</head>
+<body>
+    <div id="container">
+        <div id="profile">
+            <img src="Assets/avatar.png" alt="perfil">
+            <p>Cleison Dev</p>
+        </div>
+
+        <div id="switch">
+            <button></button>
+            <span></span>
+        </div>
+
+        <ul>
+            <li><a href="/projetos">Projetos</a></li>
+            <li><a href="/trabalhos">Trabalhos</a></li>
+         </ul>
+
+        <div id="social-links">
+            <a href="https://github.com/httpcleison" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://instagram.com/httpcleison" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </div>
+
+        <footer>
+            @CLEISONDEV
+        </footer>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        // localStorage.setItem("switch", "moon");
+        // toogleActive();
+
+        // if(localStorage.getItem("switch")){
+        //     localStorage.removeItem("switch");
+        //     localStorage.setItem("switch", "light");
+        // }else{
+        //     localStorage.setItem("switch", "light");
+        //     toogleActive();
+        // }
+        if(localStorage.getItem("switch")){
+            //
+        }else{
+            localStorage.setItem("switch", "light")
+        }
+        
+        toogleActive();
+    </script>
+</body>
+</html>
