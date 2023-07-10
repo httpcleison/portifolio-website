@@ -24,6 +24,6 @@ app.use(router);
 app.use(express.static(path.join((__dirname,'frontend')))); //tornar publica a pasta com os arquivos dentro.
 
 //inicializar servidor
-app.listen(3500, (err)=>{
+app.listen(process.env.PORT || 3500, (err)=>{
     console.log("servidor inicializado!")
 })
