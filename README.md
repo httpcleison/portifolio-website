@@ -1,4 +1,4 @@
-<h1 align="center">VENDA DE DOCES-TEMPLATE</h1>
+<h1 align="center">PORTIFOLIO WEBSITE </h1>
 <p align="justify">Esse projeto foi originalmente criado pela Rocketseat/Discover, inicialmente como DevLinks, mas fiz algumas modificações na ideia original, como, paginas dentro do portifolio, e outros, transformando tudo como eu queria.
 
 > Status do Projeto: Concluido :heavy_check_mark:
